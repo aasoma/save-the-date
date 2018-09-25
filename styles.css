@@ -5,6 +5,8 @@ body {
 #container {
     width: 100%;
     height: 100%;
+    border:2px solid red;
+    background-color: skyblue;
 }
 
 #title {
@@ -15,7 +17,7 @@ body {
 #days-of-the-week {
     display:flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-around; 
 }
 
 #day-container {
@@ -23,16 +25,30 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .row {
     width: 100%;
     height: 20%;
     display: flex;
+    justify-content: center;
     flex-direction: row;
 }
 
 .day {
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-grow: 1;
     padding: 20px;
+    width: 100px;
+    height: 100px;
 }
+
+.empty{
+background-color: skyblue;
+}
+
+#regular {
+    border: 2px solid black;
+}
+
